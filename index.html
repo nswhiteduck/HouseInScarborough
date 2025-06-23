@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House in Scarborough | A Campaign for Housing Justice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #cbd5e1; /* slate-300 */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #22d3ee, #a78bfa); /* cyan-400 to violet-400 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-grid {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 4rem 4rem;
+        }
+        .glass-pane {
+            background-color: rgba(30, 41, 59, 0.6); /* slate-800 with opacity */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="glass-pane fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                House<span class="text-gradient">In</span>Scarborough
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#issue" class="text-slate-300 hover:text-white transition-colors">The Issue</a>
+                <a href="#timeline" class="text-slate-300 hover:text-white transition-colors">Timeline</a>
+                <a href="#podcast" class="text-slate-300 hover:text-white transition-colors">Podcast</a>
+                <a href="#blog" class="text-slate-300 hover:text-white transition-colors">Blog</a>
+                <a href="#action" class="text-slate-300 hover:text-white transition-colors">Take Action</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-slate-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-pane">
+            <a href="#issue" class="block py-3 px-6 text-sm text-slate-300 hover:bg-slate-700">The Issue</a>
+            <a href="#timeline" class="block py-3 px-6 text-sm text-slate-300 hover:bg-slate-700">Timeline</a>
+            <a href="#podcast" class="block py-3 px-6 text-sm text-slate-300 hover:bg-slate-700">Podcast</a>
+            <a href="#blog" class="block py-3 px-6 text-sm text-slate-300 hover:bg-slate-700">Blog</a>
+            <a href="#action" class="block py-3 px-6 text-sm text-slate-300 hover:bg-slate-700">Take Action</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-24 bg-grid">
+        <section class="container mx-auto px-6 pt-20 pb-28 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-black text-white leading-tight">Housing is a Right.<br>Not a Luxury.</h1>
+            <p class="mt-6 text-lg text-slate-400 max-w-3xl mx-auto">In Scarborough, thousands face a housing crisis fueled by soaring rents and stagnant wages. This campaign is about bringing awareness and driving change for our community.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#issue" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition-all shadow-lg">Explore The Crisis</a>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="container mx-auto px-6 -mt-16" data-aos="fade-up" data-aos-delay="200">
+             <div class="grid md:grid-cols-3 gap-4 text-center glass-pane rounded-2xl p-8">
+                <div>
+                    <p class="text-4xl font-bold text-gradient counter" data-target="40">0</p>
+                    <p class="text-sm text-slate-400 mt-2">of low-income families spend over half their income on rent</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold text-gradient counter" data-target="84000">0</p>
+                    <p class="text-sm text-slate-400 mt-2">Households on subsidized housing waitlists in Toronto</p>
+                </div>
+                 <div>
+                    <p class="text-4xl font-bold text-gradient counter" data-target="20">0</p>
+                    <p class="text-sm text-slate-400 mt-2">Rent increase percentage in recent years</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Issue Section -->
+        <section id="issue" class="py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-white">The Crisis in Our Neighbourhood</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">The housing problem stems from three interconnected issues that create a perfect storm for low-income residents.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="glass-pane p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold text-white">The Rent is Too High</h3>
+                        <p class="mt-4 text-slate-400">A massive gap exists between average incomes and rental costs. Nearly half of tenants spend an unaffordable portion of their income (over 30%) on housing.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-pane p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-white">Not Enough Affordable Homes</h3>
+                        <p class="mt-4 text-slate-400">There's a critical shortage of affordable units. Waitlists for subsidized housing are years long, and new developments rarely include low-cost options.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-pane p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-white">Unstable & Precarious Jobs</h3>
+                        <p class="mt-4 text-slate-400">Many residents, especially newcomers, rely on part-time or gig work. This unstable income makes it nearly impossible to meet landlords' strict requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="py-28 bg-slate-900/50">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-white">A Crisis Decades in the Making</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Understanding the housing crisis requires looking back at the policy decisions and economic shifts that brought us here.</p>
+                </div>
+                <div class="relative max-w-2xl mx-auto">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-700"></div>
+                    <!-- Timeline Items -->
+                    <div class="relative" data-aos="fade-up">
+                        <div class="mb-8 flex justify-between items-center w-full">
+                            <div class="w-1/2"></div>
+                            <div class="z-10 bg-cyan-400 rounded-full h-4 w-4"></div>
+                            <div class="w-1/2 pl-8"><div class="glass-pane p-4 rounded-lg"><strong>Mid-1990s:</strong> Federal and provincial governments cut funding for social housing programs, halting new construction.</div></div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-up">
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full">
+                             <div class="w-1/2"></div>
+                            <div class="z-10 bg-cyan-400 rounded-full h-4 w-4"></div>
+                            <div class="w-1/2 pr-8 text-right"><div class="glass-pane p-4 rounded-lg"><strong>Early 2000s:</strong> Gentrification begins to accelerate in Toronto, pushing low-income residents out of central areas and into suburbs like Scarborough.</div></div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-up">
+                         <div class="mb-8 flex justify-between items-center w-full">
+                            <div class="w-1/2"></div>
+                            <div class="z-10 bg-cyan-400 rounded-full h-4 w-4"></div>
+                            <div class="w-1/2 pl-8"><div class="glass-pane p-4 rounded-lg"><strong>2010s:</strong> The "gig economy" grows, leading to more precarious work. The financialization of housing turns homes into assets for investors, driving up prices.</div></div>
+                        </div>
+                    </div>
+                     <div class="relative" data-aos="fade-up">
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full">
+                             <div class="w-1/2"></div>
+                            <div class="z-10 bg-cyan-400 rounded-full h-4 w-4"></div>
+                            <div class="w-1/2 pr-8 text-right"><div class="glass-pane p-4 rounded-lg"><strong>2020-Present:</strong> The COVID-19 pandemic highlights and worsens existing inequalities. Rents skyrocket, and the housing crisis reaches a breaking point for many families.</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast Section -->
+        <section id="podcast" class="py-28">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white">The Conversation</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">A new podcast where I connect with community leaders for virtual interviews to discuss the history, challenges, and solutions to Scarborough's housing crisis.</p>
+                </div>
+                <div class="glass-pane rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+                     <h3 class="text-3xl font-bold text-white mb-4 text-center">Coming Soon: Voices from the Frontline</h3>
+                     <p class="text-slate-400 mb-8 text-center">Gain deeper insights from officials at the <span class="text-cyan-400 font-semibold">West Scarborough Neighbourhood Community Centre</span> and the <span class="text-violet-400 font-semibold">Daily Bread Food Bank</span>.</p>
+                     <div class="text-slate-400 text-center p-4 border-2 border-dashed border-slate-600 rounded-lg bg-slate-800/50">
+                         <p>Podcast schedule is currently being finalized. Subscribe for updates!</p>
+                     </div>
+                     <form id="subscribe-form" class="mt-8">
+                         <label for="email" class="font-semibold text-white">Be the first to know when it drops.</label>
+                         <div class="mt-2 flex flex-col sm:flex-row gap-2">
+                             <input type="email" id="email" name="email" placeholder="your.email@example.com" required class="w-full px-4 py-3 rounded-lg border border-slate-600 bg-slate-800 text-white focus:ring-2 focus:ring-cyan-500 focus:outline-none transition">
+                             <button type="submit" class="bg-slate-50 text-slate-900 font-semibold px-6 py-3 rounded-lg hover:bg-slate-200 transition-all whitespace-nowrap">Subscribe</button>
+                         </div>
+                         <p id="success-message" class="text-green-400 mt-2 text-sm" style="display: none;">Thank you for subscribing!</p>
+                     </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-28 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-white">Insights & Stories</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">A new blog where I'll share research insights, personal reflections from my volunteer work, and stories from the community.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Placeholder Blog Post 1 -->
+                     <div class="glass-pane p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                         <div class="bg-slate-700 h-40 rounded-lg mb-4"></div>
+                         <h3 class="font-bold text-white text-xl">Blog Post Title Coming Soon</h3>
+                         <p class="text-slate-400 text-sm mt-2">A brief description of what this insightful blog post will be about...</p>
+                         <a href="#" class="text-cyan-400 font-semibold mt-4 inline-block">Read More &rarr;</a>
+                     </div>
+                    <!-- Placeholder Blog Post 2 -->
+                     <div class="glass-pane p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                         <div class="bg-slate-700 h-40 rounded-lg mb-4"></div>
+                         <h3 class="font-bold text-white text-xl">Blog Post Title Coming Soon</h3>
+                         <p class="text-slate-400 text-sm mt-2">A brief description of what this insightful blog post will be about...</p>
+                         <a href="#" class="text-cyan-400 font-semibold mt-4 inline-block">Read More &rarr;</a>
+                     </div>
+                    <!-- Placeholder Blog Post 3 -->
+                     <div class="glass-pane p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                         <div class="bg-slate-700 h-40 rounded-lg mb-4"></div>
+                         <h3 class="font-bold text-white text-xl">Blog Post Title Coming Soon</h3>
+                         <p class="text-slate-400 text-sm mt-2">A brief description of what this insightful blog post will be about...</p>
+                         <a href="#" class="text-cyan-400 font-semibold mt-4 inline-block">Read More &rarr;</a>
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Action Section -->
+        <section id="action" class="py-28">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-white">Take Action</h2>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Change requires collective action. Here are ways you can make a difference in our community right now.</p>
+                <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Donate Block -->
+                    <div class="glass-pane p-8 rounded-xl text-center flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                        <div>
+                            <div class="w-24 h-24 mx-auto rounded-full bg-yellow-400/10 flex items-center justify-center border-2 border-yellow-400/20">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-white text-xl mt-4">The Housing Help Centre</h3>
+                            <p class="text-slate-400 mt-2">Until my own donation system is live, please consider supporting The Housing Help Centre. They provide direct, essential services to those facing housing insecurity in our city.</p>
+                        </div>
+                        <a href="https://shhc.ca/donate" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-all shadow-lg mt-6 inline-block">
+                            Donate via shhc.ca
+                        </a>
+                    </div>
+                     <!-- Contact Block -->
+                     <div class="glass-pane p-8 rounded-xl text-center flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                            <div class="w-24 h-24 mx-auto rounded-full bg-violet-400/10 flex items-center justify-center border-2 border-violet-400/20">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-white text-xl mt-4">Contact Your Representatives</h3>
+                            <p class="text-slate-400 mt-2">Let your City Councillor and MPP know that housing affordability is a priority. A phone call or email can make a significant impact on policy decisions.</p>
+                        </div>
+                         <a href="https://www.toronto.ca/city-government/council/members-of-council/" target="_blank" rel="noopener noreferrer" class="bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-lg hover:bg-slate-600 transition-all shadow-lg mt-6 inline-block">
+                            Find Your Councillor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900/50 text-slate-400">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 HouseInScarborough.ca | A campaign by Niloy Sharma.</p>
+            <p class="text-sm mt-2">This is a student project for HSB4U: Challenge and Change in Society.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Email subscription form
+        const subscribeForm = document.getElementById('subscribe-form');
+        const successMessage = document.getElementById('success-message');
+        subscribeForm.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+            successMessage.style.display = 'block';
+            subscribeForm.reset();
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        });
+        
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; 
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                        if(target === 40 || target === 20) counter.innerText += '%';
+                    }
+                };
+                updateCount();
+            });
+        };
+        
+        // Intersection Observer for counter
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+             const statsSection = document.querySelector('.counter');
+             if(statsSection) {
+                 observer.observe(statsSection.parentElement.parentElement);
+             }
+        });
+
+    </script>
+
+</body>
+</html>
